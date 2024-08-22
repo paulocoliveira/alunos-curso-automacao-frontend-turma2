@@ -2,6 +2,7 @@ from selenium import webdriver
 from time import sleep
 
 browser = webdriver.Firefox()
+
 browser.get("https://www.uol.com.br")
 
 browser.maximize_window()
