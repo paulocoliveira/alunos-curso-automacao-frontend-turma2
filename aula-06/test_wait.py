@@ -23,6 +23,7 @@ def driver():
 
     driver.quit()
 
+# para rodar este teste com sucesso, descomente a linha da fixture que ativa o implicit_wait
 def atest_implicity_wait(driver):
     button = driver.find_element(By.XPATH, "//section[@id='conditional-element-section']/button")
     button.click()
