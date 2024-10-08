@@ -1,0 +1,56 @@
+2024-10-08 20:36:05 [ERROR] Erro durante o teste: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='FINALIZAR']"}
+  (Session info: chrome=129.0.6668.90); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000102da4248 cxxbridge1$str$ptr + 1907280
+1   chromedriver                        0x0000000102d9c730 cxxbridge1$str$ptr + 1875768
+2   chromedriver                        0x00000001029b0260 cxxbridge1$string$len + 89488
+3   chromedriver                        0x00000001029f450c cxxbridge1$string$len + 368700
+4   chromedriver                        0x0000000102a2e7d0 cxxbridge1$string$len + 606976
+5   chromedriver                        0x00000001029e912c cxxbridge1$string$len + 322652
+6   chromedriver                        0x00000001029e9d7c cxxbridge1$string$len + 325804
+7   chromedriver                        0x0000000102d6c4d8 cxxbridge1$str$ptr + 1678560
+8   chromedriver                        0x0000000102d70e40 cxxbridge1$str$ptr + 1697352
+9   chromedriver                        0x0000000102d515ec cxxbridge1$str$ptr + 1568244
+10  chromedriver                        0x0000000102d71710 cxxbridge1$str$ptr + 1699608
+11  chromedriver                        0x0000000102d42b90 cxxbridge1$str$ptr + 1508248
+12  chromedriver                        0x0000000102d8d828 cxxbridge1$str$ptr + 1814576
+13  chromedriver                        0x0000000102d8d980 cxxbridge1$str$ptr + 1814920
+14  chromedriver                        0x0000000102d9c3d0 cxxbridge1$str$ptr + 1874904
+15  libsystem_pthread.dylib             0x000000018f061f94 _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000018f05cd34 thread_start + 8
+ (test_logging.py:40)
+Traceback (most recent call last):
+  File "/Users/mindera/github/alunos-curso-automacao-frontend-turma2/aula-12/test_logging.py", line 38, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mindera/github/alunos-curso-automacao-frontend-turma2/aula-12/test_logging.py", line 112, in test_datetime_manipulation_2
+    driver.find_element(By.XPATH, "//button[text()='FINALIZAR']").click()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mindera/github/alunos-curso-automacao-frontend-turma2/myenv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mindera/github/alunos-curso-automacao-frontend-turma2/myenv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "/Users/mindera/github/alunos-curso-automacao-frontend-turma2/myenv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='FINALIZAR']"}
+  (Session info: chrome=129.0.6668.90); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+0   chromedriver                        0x0000000102da4248 cxxbridge1$str$ptr + 1907280
+1   chromedriver                        0x0000000102d9c730 cxxbridge1$str$ptr + 1875768
+2   chromedriver                        0x00000001029b0260 cxxbridge1$string$len + 89488
+3   chromedriver                        0x00000001029f450c cxxbridge1$string$len + 368700
+4   chromedriver                        0x0000000102a2e7d0 cxxbridge1$string$len + 606976
+5   chromedriver                        0x00000001029e912c cxxbridge1$string$len + 322652
+6   chromedriver                        0x00000001029e9d7c cxxbridge1$string$len + 325804
+7   chromedriver                        0x0000000102d6c4d8 cxxbridge1$str$ptr + 1678560
+8   chromedriver                        0x0000000102d70e40 cxxbridge1$str$ptr + 1697352
+9   chromedriver                        0x0000000102d515ec cxxbridge1$str$ptr + 1568244
+10  chromedriver                        0x0000000102d71710 cxxbridge1$str$ptr + 1699608
+11  chromedriver                        0x0000000102d42b90 cxxbridge1$str$ptr + 1508248
+12  chromedriver                        0x0000000102d8d828 cxxbridge1$str$ptr + 1814576
+13  chromedriver                        0x0000000102d8d980 cxxbridge1$str$ptr + 1814920
+14  chromedriver                        0x0000000102d9c3d0 cxxbridge1$str$ptr + 1874904
+15  libsystem_pthread.dylib             0x000000018f061f94 _pthread_start + 136
+16  libsystem_pthread.dylib             0x000000018f05cd34 thread_start + 8
+
