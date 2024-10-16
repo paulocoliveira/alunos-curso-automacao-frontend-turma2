@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "mocha": "^10.7.3",
+    "selenium-webdriver": "^4.25.0"
+  },
+  "scripts": {
+    "test": "mocha --timeout 10000"
+  },
+  "name": "javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^129.0.4"
+  },
+  "description": ""
+}
