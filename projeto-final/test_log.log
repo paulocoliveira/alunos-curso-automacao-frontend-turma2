@@ -1,0 +1,4 @@
+2024-10-22 22:24:40 [INFO] ====== WebDriver manager ====== (logger.py:11)
+2024-10-22 22:24:40 [INFO] Get LATEST chromedriver version for google-chrome (logger.py:11)
+2024-10-22 22:24:40 [INFO] Get LATEST chromedriver version for google-chrome (logger.py:11)
+2024-10-22 22:24:40 [INFO] Driver [/Users/mindera/.wdm/drivers/chromedriver/mac64/130.0.6723.69/chromedriver-mac-arm64/chromedriver] found in cache (logger.py:11)
